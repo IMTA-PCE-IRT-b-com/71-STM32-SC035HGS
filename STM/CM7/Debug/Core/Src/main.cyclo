@@ -1,0 +1,14 @@
+../Core/Src/main.c:305:5:main	14
+../Core/Src/main.c:653:6:SystemClock_Config	4
+../Core/Src/main.c:715:13:MX_DCMI_Init	2
+../Core/Src/main.c:752:13:MX_I2C1_Init	4
+../Core/Src/main.c:800:13:MX_I2C4_Init	4
+../Core/Src/main.c:846:13:MX_DMA_Init	1
+../Core/Src/main.c:864:13:MX_GPIO_Init	1
+../Core/Src/main.c:974:6:HAL_GPIO_EXTI_Callback	5
+../Core/Src/main.c:991:19:SC035HGS_ReadReg8	1
+../Core/Src/main.c:997:19:SC035HGS_ReadReg16	1
+../Core/Src/main.c:1005:19:SC035HGS_WriteReg	1
+../Core/Src/main.c:1011:6:SC035HGS_VerifyReg8	3
+../Core/Src/main.c:1022:6:SC035HGS_VerifyReg16	3
+../Core/Src/main.c:1038:6:Error_Handler	1
