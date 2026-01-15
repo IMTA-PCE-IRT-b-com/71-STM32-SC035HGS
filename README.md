@@ -82,53 +82,55 @@ Connexions côté microcontrôleur :
 
 Les connexions au microcontrôleur sont situées sur le connecteur 18 pins à droite du circuit. Tous les signaux logiques de ce côté ont pour tension haute 3.3 V.
 
-N° pin | Nom       | Fonction
-1      | STM_SDA   | Ligne de donnée de contrôle I2C, envoyée entre les deux systèmes
-2      | STM_SCL   | Ligne d’horloge du bus I2C imposée par la carte
-3      | STM_RESET | Signal logique de réinitialisation de la caméra
-4      | STM_VSYNC | Signal logique indiquant le début et la fin d’une trame de données
-5      | STM_PWDN  | Signal logique permettant de mettre en veille la caméra
-6      | STM_HREF  | Signal logique indiquant les périodes de disponibilité des données
-7      | DT_CAM_7  | Bit logique n°7 de donnée vidéo envoyé par la caméra
-8      | STM_MCLK  | Signal d’horloge à imposer à la caméra pour son fonctionnement interne
-9      | DT_CAM_6  | Bit logique n°6 de donnée vidéo envoyé par la caméra
-10     | DT_CAM_5  | Bit logique n°5 de donnée vidéo envoyé par la caméra
-11     | STM_PCLK  | Signal d’horloge de cadence de sortie des données vidéo, imposé par la caméra
-12     | DT_CAM_4  | Bit logique n°4 de donnée vidéo envoyé par la caméra
-13     | DT_CAM_0  | Bit logique n°0 de donnée vidéo envoyé par la caméra
-14     | DT_CAM_3  | Bit logique n°3 de donnée vidéo envoyé par la caméra
-15     | DT_CAM_1  | Bit logique n°1 de donnée vidéo envoyé par la caméra
-16     | DT_CAM_2  | Bit logique n°2 de donnée vidéo envoyé par la caméra
-17     | +3V3      | Alimentation 3.3V fournie par la carte
-18     | GND1      | La masse
+| N° pin | Nom       | Fonction |
+|--------|-----------|----------|
+| 1      | STM_SDA   | Ligne de donnée de contrôle I2C, envoyée entre les deux systèmes |
+| 2      | STM_SCL   | Ligne d’horloge du bus I2C imposée par la carte |
+| 3      | STM_RESET | Signal logique de réinitialisation de la caméra |
+| 4      | STM_VSYNC | Signal logique indiquant le début et la fin d’une trame de données |
+| 5      | STM_PWDN  | Signal logique permettant de mettre en veille la caméra |
+| 6      | STM_HREF  | Signal logique indiquant les périodes de disponibilité des données |
+| 7      | DT_CAM_7  | Bit logique n°7 de donnée vidéo envoyé par la caméra |
+| 8      | STM_MCLK  | Signal d’horloge à imposer à la caméra pour son fonctionnement interne |
+| 9      | DT_CAM_6  | Bit logique n°6 de donnée vidéo envoyé par la caméra |
+| 10     | DT_CAM_5  | Bit logique n°5 de donnée vidéo envoyé par la caméra |
+| 11     | STM_PCLK  | Signal d’horloge de cadence de sortie des données vidéo, imposé par la caméra |
+| 12     | DT_CAM_4  | Bit logique n°4 de donnée vidéo envoyé par la caméra |
+| 13     | DT_CAM_0  | Bit logique n°0 de donnée vidéo envoyé par la caméra |
+| 14     | DT_CAM_3  | Bit logique n°3 de donnée vidéo envoyé par la caméra |
+| 15     | DT_CAM_1  | Bit logique n°1 de donnée vidéo envoyé par la caméra |
+| 16     | DT_CAM_2  | Bit logique n°2 de donnée vidéo envoyé par la caméra |
+| 17     | +3V3      | Alimentation 3.3V fournie par la carte |
+| 18     | GND1      | La masse |
+
 
 Connexions côté caméra
 
 Les connexions à la caméra sont situées sur le connecteur 21 pins à gauche du circuit. Tous les signaux logiques de ce côté ont pour tension haute 1.8 V. A noter que la caméra possède en réalité 24 connexions, mais 2 d’entre elles ne sont pas attribués et la connexion permettant le contrôle de la LED stroboscopique n’est ici pas utilisée. Le tableau suivant associe également les numéros de pin aux numéros des entrées/sorties de la caméra, indiqués sur sa documentation.
 
-N° pin | N° cam | Nom  | Fonction
-1      | 02     | GND  | La masse
-2      | 03     | SDA  | Ligne de donnée de contrôle I2C, envoyée entre les deux systèmes
-3      | 04     | +2V8 | Alimentation 2.8 V
-4      | 05     | SCL  | Ligne d’horloge du bus I2C imposée par la carte
-5      | 06     | RESET| Signal logique de réinitialisation de la caméra
-6      | 07     | VSYNC| Signal logique indiquant le début et la fin d’une trame de données
-7      | 08     | PWDN | Signal logique permettant de mettre en veille la caméra
-8      | 09     | HREF | Signal logique indiquant les périodes de disponibilité des données
-9      | 10     | +1V5 | Alimentation 1.5 V
-10     | 11     | +1V8 | Alimentation 1.8 V
-11     | 12     |  Y7  | Bit logique n°7 de donnée vidéo envoyé par la caméra
-12     | 13     | MCLK | Signal d’horloge à imposer à la caméra pour son fonctionnement interne
-13     | 14     |  Y6  | Bit logique n°6 de donnée vidéo envoyé par la caméra
-14     | 15     | GND  | La masse
-15     | 16     |  Y5  | Bit logique n°5 de donnée vidéo envoyé par la caméra
-16     | 17     | PCLK | Signal d’horloge de cadence de sortie des données vidéo, imposé par la caméra
-17     | 18     |  Y4  | Bit logique n°4 de donnée vidéo envoyé par la caméra
-18     | 19     |  Y0  | Bit logique n°0 de donnée vidéo envoyé par la caméra
-19     | 20     |  Y3  | Bit logique n°3 de donnée vidéo envoyé par la caméra
-20     | 21     |  Y1  | Bit logique n°1 de donnée vidéo envoyé par la caméra
-21     | 22     |  Y2  | Bit logique n°2 de donnée vidéo envoyé par la caméra
-
+| N° pin | N° cam | Nom | Fonction |
+|--------|--------|-----|-----------|
+| 1      | 02     | GND | La masse |
+| 2      | 03     | SDA | Ligne de donnée de contrôle I2C, envoyée entre les deux systèmes |
+| 3      | 04     | +2V8 | Alimentation 2.8 V |
+| 4      | 05     | SCL | Ligne d’horloge du bus I2C imposée par la carte |
+| 5      | 06     | RESET | Signal logique de réinitialisation de la caméra |
+| 6      | 07     | VSYNC | Signal logique indiquant le début et la fin d’une trame de données |
+| 7      | 08     | PWDN | Signal logique permettant de mettre en veille la caméra |
+| 8      | 09     | HREF | Signal logique indiquant les périodes de disponibilité des données |
+| 9      | 10     | +1V5 | Alimentation 1.5 V |
+| 10     | 11     | +1V8 | Alimentation 1.8 V |
+| 11     | 12     | Y7 | Bit logique n°7 de donnée vidéo envoyé par la caméra |
+| 12     | 13     | MCLK | Signal d’horloge à imposer à la caméra pour son fonctionnement interne |
+| 13     | 14     | Y6 | Bit logique n°6 de donnée vidéo envoyé par la caméra |
+| 14     | 15     | GND | La masse |
+| 15     | 16     | Y5 | Bit logique n°5 de donnée vidéo envoyé par la caméra |
+| 16     | 17     | PCLK | Signal d’horloge de cadence de sortie des données vidéo, imposé par la caméra |
+| 17     | 18     | Y4 | Bit logique n°4 de donnée vidéo envoyé par la caméra |
+| 18     | 19     | Y0 | Bit logique n°0 de donnée vidéo envoyé par la caméra |
+| 19     | 20     | Y3 | Bit logique n°3 de donnée vidéo envoyé par la caméra |
+| 20     | 21     | Y1 | Bit logique n°1 de donnée vidéo envoyé par la caméra |
+| 21     | 22     | Y2 | Bit logique n°2 de donnée vidéo envoyé par la caméra |
 
 
 Utilisation :
