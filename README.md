@@ -37,11 +37,11 @@ Il est recommandé de ne pas s’appuyer aveuglément sur les choix techniques e
 
 ---
 
-## Documentation Adaptateur caméra SC036GS pour STM32
+## Documentation Adaptateur caméra SC031GS pour STM32
 
 Préambule :
 
-Cet adaptateur a été conçu comme interface entre une caméra type SC036GS et une carte STM32, mais peut être utilisé pour d’autres modèles de caméra (comme la SC035HGS) et éventuellement d’autres microcontrôleurs partageant les mêmes caractéristiques.
+Cet adaptateur a été conçu comme interface entre une caméra type SC031GS et une carte STM32, mais peut être utilisé pour d’autres modèles de caméra (comme la SC035HGS) et éventuellement d’autres microcontrôleurs partageant les mêmes caractéristiques.
 
 Cet adaptateur a pour but de fournir à la caméra les trois types d’alimentations qu’elle nécessite, ainsi que d’adapter les tensions des valeurs logiques qu’elle produit, différentes de celles d’une carte STM32.
 
