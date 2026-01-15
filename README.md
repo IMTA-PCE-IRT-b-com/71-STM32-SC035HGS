@@ -8,12 +8,16 @@ Le projet inclut également les éléments relatifs à l’adaptateur assurant l
 - les schémas du PCB réalisés sous **KiCad**, disponibles dans ce dépôt.
 
 ---
+## Documentation
+
+Les différentes documentations récupérées auprès de Sinoseen ont été archivées dans le dossier doc/.
+Celui-ci comprend la description de produit, la datasheet de la caméra ainsi qu'un code d'initialisation fournit par le constructeur.
 
 ## Code d’exemple
 
 Un prototype de code permettant la communication **I²C** avec la caméra et l’**IMU** est fourni dans le dossier `STM/`.
 
-Ce code initialise les différents périphériques utilisés :
+Ce code initialise les différents périphériques utilisés sur le coeur M7 :
 - le **DVP** (Digital Video Port),
 - **I2C1** pour la configuration de la caméra,
 - **3 ports GPIO** avec interruptions externes pour tester les sorties d’horloge de la caméra  
@@ -33,7 +37,7 @@ Il est recommandé de ne pas s’appuyer aveuglément sur les choix techniques e
 
 ---
 
-Documentation Adaptateur caméra SC036GS pour STM32
+## Documentation Adaptateur caméra SC036GS pour STM32
 
 Préambule :
 
